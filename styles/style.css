@@ -1,0 +1,75 @@
+body {
+  font: 400 16px/1.6em "OpenSans", sans-serif;
+  color: var(--main-font-color);
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+h2 {
+  font: 400 3.75em/1.2em "Neucha", serif;
+}
+
+h3 {
+  font: 400 2.125em/1.2em "Neucha", serif;
+}
+
+.section {
+  position: relative;
+  margin: 0;
+}
+
+.section::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  opacity: 0.1;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* .headline-block {
+  
+} */
+
+.headline {
+  font: 400 4.5em/1.2em "Neucha", sans-serif;
+  color: var(--main-font-color);
+}
+
+.orange-color {
+  color: var(--font-color-orange);
+}
+
+/* .header-image {
+  position: absolute;
+
+  height: 525px;
+  top: 55px;
+  right: -24%;
+
+  z-index: -1;
+} */
+
+.text-block {
+  column-count: 2;
+  column-width: 50%;
+  gap: 30px;
+}
+
+.text {
+  margin-top: 0;
+  text-align: justify;
+}
